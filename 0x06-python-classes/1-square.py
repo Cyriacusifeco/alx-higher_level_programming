@@ -15,4 +15,10 @@ class Square:
     """
     def __init__(self, size=0):
 
+        """
+        initializes the attribute; size
+        with no type or value verification.
+
+        """
+
         self._size = size
