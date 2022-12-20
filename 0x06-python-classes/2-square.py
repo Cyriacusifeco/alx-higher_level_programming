@@ -11,13 +11,14 @@ class Square:
 
     """
     Next, we create a private instance attribute: size with no capabilities.
+    However, we are gonna implement type and value validation.
 
     """
     def __init__(self, size=0):
 
         """
         initializes the attribute; size
-        with no type or value verification.
+        with type and value verification.
 
         """
         if not isinstance(size, int):
