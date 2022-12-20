@@ -13,6 +13,6 @@ class Square:
     Next, we create a private instance attribute: size with no capabilities.
 
     """
-    def __init__(self, size):
+    def __init__(self, size=0):
 
         self._size = size
