@@ -2,7 +2,7 @@
 """
 Classes and objects are the two main aspects of object oriented programming.
 A class creates a new type where objects are instances of the class. In this
-module, we attempt to build our Class(type) "Square" from the ground up step by step.
+module, we attempt to build our Class "Square" from the ground up step by step.
 
 """
 
