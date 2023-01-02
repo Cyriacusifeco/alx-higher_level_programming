@@ -26,16 +26,6 @@ class Rectangle:
         self.__width = width
         self.__height = height
 
-    def area(self):
-
-        """
-        A public instance method that returns the square
-        of size.
-
-        """
-
-        return (self.__width * self.__height)
-
     @property
     def width(self):
 
