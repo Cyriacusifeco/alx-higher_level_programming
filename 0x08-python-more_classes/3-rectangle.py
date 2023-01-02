@@ -60,9 +60,9 @@ class Rectangle:
             return ""
 
         for row in range(self.__height):
-            for col in range(self.__width):
-                rect_str += "#"
-            rect_str += "\n"
+            rect_str += '#' * self.__width
+            if i != self.__height - 1:
+                rect += '\n'
         return rect_str
 
     @property
