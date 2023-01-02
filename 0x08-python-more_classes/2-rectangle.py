@@ -41,7 +41,7 @@ class Rectangle:
         Finds the perimeter of Rectangle.
 
         """
-        if width == 0 or height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
 
         else:
