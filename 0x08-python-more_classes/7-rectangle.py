@@ -66,7 +66,10 @@ class Rectangle:
 
         for row in range(self.__height):
             for col in range(self.__width):
-                rect_str += Rectangle.print_symbol
+                if isinstance(self.print_symbol, list):
+                    rect_str += " ".join(str(x) for x in self.print_symbol)
+                else:
+                    rect_str += Rectangle.print_symbol
             rect_str += "\n"
         return rect_str
 
