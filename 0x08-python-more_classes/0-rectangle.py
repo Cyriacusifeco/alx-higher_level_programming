@@ -2,7 +2,8 @@
 """
 Classes and objects are the two main aspects of object oriented programming.
 A class creates a new type where objects are instances of the class. In this
-module, we attempt to build another Class "Rectangle" from the ground up step by step.
+module, we attempt to build another Class "Rectangle" from the
+ground up step by step.
 
 """
 
