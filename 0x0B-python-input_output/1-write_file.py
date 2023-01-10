@@ -1,13 +1,14 @@
 #!/usr/bin/python3
-"""initializate"""
+"""writes to text file"""
 
 
-def number_of_lines(filename=""):
-    """function that returns the number of lines of a text file"""
+def write_file(filename="", text=""):
+    """Writes a string to a text file (UTF-8).
 
-    num = 0
-    with open(filename, encoding="utf-8") as f:
-        line = f.readlines()
-        num = len(line)
-    f.close()
-    return num
+    Args:
+        filename(str): The name of file
+        text(str): String to write to file
+    """
+
+    with open(filename, "w", encoding="utf-8") as f:
+        return f.write(text)
