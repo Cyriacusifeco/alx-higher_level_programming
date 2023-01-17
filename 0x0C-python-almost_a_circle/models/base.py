@@ -58,11 +58,16 @@ class Base:
             **dictionary(dict): key/value pairs of attributes to be assigned to
             an object"""
         if dictionary != {}:
-            obj = cls(4, 5)
 
-            obj.update(**dictionary)
+            if cls.__name__ == "Rectangle":
+                dummy = cls(1,1)
 
-            return obj
+            elif cls.__name__ == "Square":
+                dummy = cls(1)
+
+            dummy.update(**dictionary)
+
+            return dummy
 
     @classmethod
     def load_from_file(cls):
