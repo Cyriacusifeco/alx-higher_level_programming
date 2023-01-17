@@ -57,12 +57,11 @@ class Base:
         Args:
             **dictionary(dict): key/value pairs of attributes to be assigned to
             an object"""
-        if dictionary and dictionary != {}:
-            if cls.__name__ == "Rectangle":
-                obj = cls(4, 5)
-            else:
-                obj = cls(4)
+        if dictionary != {}:
+            obj = cls(4, 5)
+
             obj.update(**dictionary)
+
             return obj
 
     @classmethod
