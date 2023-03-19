@@ -36,5 +36,6 @@ def get__db():
     cur.close()
     db.close()
 
+
 if __name__ == '__main__':
     get__db()
